@@ -44,9 +44,9 @@ employee_training_courses.each_with_index.map { |course, i|
     currency: currency[:code],
     cost: course[:cost],
     cost_in_gbp: (course[:cost].to_f * currency[:exchange_rate]).round(2),
-    starts_on: course[:start_on],
-    ends_on: course[:end_on],
-    expires_on: course[:expires_on]
+    starts_on: course[:start_on]&.to_date,
+    ends_on: course[:end_on]&.to_date,
+    expires_on: course[:expires_on]&.to_date
   }
 
   range_data << row_data.values
