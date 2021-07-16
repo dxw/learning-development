@@ -9,6 +9,8 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    breathe (0.3.3)
+      sawyer (~> 0.8.2)
     concurrent-ruby (1.1.9)
     declarative (0.0.20)
     dotenv (2.7.6)
@@ -79,6 +81,9 @@ GEM
     retriable (3.1.2)
     rexml (3.2.5)
     ruby2_keywords (0.0.4)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
     signet (0.15.0)
       addressable (~> 2.3)
       faraday (>= 0.17.3, < 2.0)
@@ -105,6 +110,7 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
+  breathe
   dotenv
   faraday
   google-api-client

@@ -7,3 +7,4 @@ gem "faraday"
 gem "dotenv"
 gem "google-api-client"
 gem "slack-ruby-client"
+gem 'breathe'
