@@ -35,6 +35,7 @@ employee_training_courses.each_with_index.map { |course, i|
   currency = get_currency(course[:remuneration_currency_id])
 
   row_data = {
+    employee: course.dig(:employee, :id),
     department: employees_departments[course.dig(:employee, :id)],
     type: course.dig(:company_training_type, :name),
     category: course.dig(:company_training_category, :name),
