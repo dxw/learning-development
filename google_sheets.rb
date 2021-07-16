@@ -57,7 +57,7 @@ service.authorization = Google::Auth::ServiceAccountCredentials.make_creds(
   json_key_io: StringIO.new(ENV.fetch("GOOGLE_CLIENT_SECRET")),
   scope: Google::Apis::SheetsV4::AUTH_SPREADSHEETS
 )
-spreadsheet_id = '1Z_EDcQjlcUkDecnZVz9_VFT7ZHddoiEv8o3g1PCt_mw'
+spreadsheet_id = ENV["GOOGLE_SHEET_ID"]
 range = "Sheet1!A2:ZZ"
 response = service.update_spreadsheet_value(spreadsheet_id, range, Google::Apis::SheetsV4::ValueRange.new(values: range_data), value_input_option: 'USER_ENTERED')
 
