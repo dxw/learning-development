@@ -15,7 +15,8 @@ def get_currency(currency_id)
   }[currency_id]
 end
 
-breathe = Breathe::Client.new(api_key: ENV["BREATHE_PRODUCTION_API_KEY"])
+# Access Breathe API
+breathe = Breathe::Client.new(api_key: ENV["BREATHE_PRODUCTION_API_KEY"], auto_paginate: true)
 
 # Get all employees' departments
 employees = breathe.employees.list.response.data[:employees]
