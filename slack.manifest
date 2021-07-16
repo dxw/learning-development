@@ -1,7 +1,7 @@
 _metadata:
   major_version: 1
 display_information:
-  name: Demo App
+  name: LearningCat
 settings:
   org_deploy_enabled: false
   socket_mode_enabled: false

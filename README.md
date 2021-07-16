@@ -8,6 +8,10 @@ It was made for dxw's Makers' Days, 15-16 July 2021.
 ### Breathe to Google Sheets
 `bundle exec ruby google_sheets.rb` to extract all L&D data from Breath to a specified Google Sheet
 
+### Slackbot
+- Add your email to the `our_email` array in `get_breathe_user_data` in `lib/learningbot/client.rb` to receive Slackbot messages without pinging everyone.
+- You can run this with `bundle exec ruby lib/learningbot.rb`.
+
 ## Installation
 1. Install prerequisites by running `bundle install`.
 2. Copy the `.env.example` file to `.env,` and update. You can find Breathe API keys and Google Service Account details on 1Password.
