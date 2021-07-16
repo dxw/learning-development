@@ -19,8 +19,21 @@ GEM
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
+    faraday_middleware (1.0.0)
+      faraday (~> 1.0)
+    gli (2.20.1)
+    hashie (4.1.0)
     multipart-post (2.1.1)
     ruby2_keywords (0.0.4)
+    slack-ruby-client (0.17.0)
+      faraday (>= 1.0)
+      faraday_middleware
+      gli
+      hashie
+      websocket-driver
+    websocket-driver (0.7.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   x86_64-darwin-19
@@ -28,6 +41,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   faraday
+  slack-ruby-client
 
 RUBY VERSION
    ruby 3.0.0p0
